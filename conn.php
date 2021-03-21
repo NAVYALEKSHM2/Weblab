@@ -1,17 +1,17 @@
 <?php
 
-	$servername='localhost';
-	$username='root';
-	$password='';
-	$dbname = "library";
+$servername ='localhost';
+$username='root';
+$password='';
+$dbname="abcd";
 
-	$conn=mysqli_connect($servername,$username,$password,$dbname);
-	if(!$conn){
-   		die('Could not Connect My Sql:' .mysql_error());
-
-	}
-	else
-	{
- 		echo "Database connected";
-	}
-	?>
+$conn=mysqli_connect($servername,$username,$password,$dbname);
+if(!$conn)
+{
+die('Could not Connect MySQL:'.mysql_error());
+}
+else
+{
+echo "Database Connected";
+}
+?>
